@@ -13,7 +13,12 @@ public class LoginController {
 	public String getLogin() {
 		return "login";
 	}
-//Git commited
+	@RequestMapping("/login")
+	public String login()
+	{
+		return "login";
+	}
+
 	@RequestMapping("/loginAuth")
 	public ModelAndView loginAuth(@ModelAttribute Login login) {
 		ModelAndView model;
